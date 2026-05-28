@@ -200,13 +200,13 @@ body {
 }
 
 .hero-photo img {
-  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
-  max-width: 140px;
-  max-height: 140px;
   object-fit: cover;
-  border-radius: 50%;
+  z-index: 1;
 }
 
 .photo-placeholder {
@@ -219,10 +219,6 @@ body {
   color: var(--text-dim);
   font-size: 3rem;
   z-index: 0;
-}
-
-.hero-photo img[src="assets/photo.png"]:not([src]), .hero-photo img:not([src]) {
-  display: none;
 }
 
 .hero-badge {
