@@ -15,7 +15,7 @@
 <body>
   <nav class="navbar">
     <div class="nav-container">
-      <a href="#hero" class="nav-logo">&lt;yr/&gt;</a>
+      <a href="#hero" class="nav-logo">~/robbythefish</a>
       <div class="nav-links">
         <a href="#about">About</a>
         <a href="#cv">CV</a>
@@ -32,6 +32,12 @@
   <section id="hero" class="hero">
     <div class="hero-bg"></div>
     <div class="hero-content">
+      <div class="hero-photo">
+        <img src="assets/photo.png" alt="Yaroslav" onerror="this.style.display='none'">
+        <div class="photo-placeholder">
+          <i class="fa-solid fa-user"></i>
+        </div>
+      </div>
       <div class="hero-badge">
         <span class="pulse-dot"></span> Open to work
       </div>
@@ -58,11 +64,7 @@
         </a>
       </div>
     </div>
-    <div class="hero-scroll">
-      <span>Scroll</span>
-      <div class="scroll-line"></div>
-    </div>
-  </section>
+    </section>
 
   <section id="about" class="about">
     <div class="container">
@@ -228,15 +230,15 @@
       </div>
       <p class="contacts-sub">I'm always open to discussing interesting challenges, open-source collaboration, or just chatting about stream processing and distributed systems.</p>
       <div class="contacts-grid">
-        <a href="https://t.me/prendsgarde" target="_blank" rel="noopener" class="contact-card glass">
-          <i class="fa-brands fa-telegram"></i>
-          <span class="contact-label">Telegram</span>
-          <span class="contact-value">@prendsgarde</span>
-        </a>
         <a href="https://www.linkedin.com/in/prendsgarde" target="_blank" rel="noopener" class="contact-card glass">
           <i class="fa-brands fa-linkedin"></i>
           <span class="contact-label">LinkedIn</span>
           <span class="contact-value">prendsgarde</span>
+        </a>
+        <a href="https://t.me/prendsgarde" target="_blank" rel="noopener" class="contact-card glass">
+          <i class="fa-brands fa-telegram"></i>
+          <span class="contact-label">Telegram</span>
+          <span class="contact-value">@prendsgarde</span>
         </a>
         <a href="mailto:oz.yaroslav@outlook.com" class="contact-card glass">
           <i class="fa-solid fa-envelope"></i>
