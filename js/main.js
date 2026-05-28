@@ -2,7 +2,6 @@ document.addEventListener('DOMContentLoaded', () => {
   initNavToggle();
   initScrollAnimations();
   initNavbarScroll();
-  initDownloadCV();
   fetchGitHubRepos();
 });
 
@@ -47,19 +46,6 @@ function initNavbarScroll() {
       navbar.style.background = 'rgba(10, 10, 15, 0.85)';
     }
   });
-}
-
-function initDownloadCV() {
-  const downloadBtn = document.getElementById('download-cv');
-  const downloadBtnBottom = document.getElementById('download-cv-bottom');
-
-  const handleDownload = (e) => {
-    e.preventDefault();
-    alert('CV will be available soon. Please check back later or contact me directly.');
-  };
-
-  if (downloadBtn) downloadBtn.addEventListener('click', handleDownload);
-  if (downloadBtnBottom) downloadBtnBottom.addEventListener('click', handleDownload);
 }
 
 const LANG_COLORS = {
